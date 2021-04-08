@@ -13,6 +13,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ConditionalOnClass(DruidDataSource.class)
+//说明会在DataSourceAutoConfiguration之前配置
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
 public class DataSourceConfig {
 
